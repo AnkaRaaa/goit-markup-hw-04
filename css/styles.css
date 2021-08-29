@@ -323,10 +323,6 @@ a {
   fill: rgb(252, 252, 252);
 }
 /* Постоянные клиенты */
-.section-items {
-  flex-basis: calc((100% - 150px) / 6);
-  border-radius: 4px;
-}
 .section-text {
   width: 700px;
   font-size: 36px;
@@ -334,6 +330,19 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.section-list {
+  display: flex;
+}
+.section-items {
+  flex-basis: calc((100% - 150px) / 6);
+  border-radius: 4px;
+  justify-content: center;
+  margin-left: 30px;
+}
+.section-items:not(:first-child) {
+  margin-left: 30px;
+}
+
 .section-link {
   display: flex;
   justify-content: center;
@@ -341,9 +350,13 @@ a {
   color: #afb1b8;
   border: 1px solid #afb1b8;
 }
+.section-link :hover,
+:focus {
+  fill: var(--accent-color);
+}
 .section-socials {
-  display: flex;
   justify-content: center;
+  fill: #afb1b8;
 
   /* box-sizing: border-box;
   border-radius: 4px; */
@@ -436,8 +449,8 @@ a {
   color: var(--primary-text-color);
 }
 .button-box {
-  /* display: inline-block; */
-  color: var(--primary-text-color);
+  display: inline-block;
+  /* color: var(--primary-text-color); */
   background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
@@ -455,6 +468,10 @@ a {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
+
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .description {
