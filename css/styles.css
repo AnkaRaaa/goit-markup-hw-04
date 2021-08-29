@@ -327,11 +327,11 @@ a {
 /* Постоянные клиенты */
 .section-text {
   text-align: center;
-  width: 700px;
-  font-size: 36px;77
+  font-size: 36px;
   line-height: 1.16px;
-  text-align: center;
   letter-spacing: 0.03em;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .section-list {
   display: flex;
@@ -345,11 +345,9 @@ a {
 }
 .section-items:not(:first-child) {
   margin-left: 30px;
-
 }
-.section-items :hover
-.section-items :focus{
-border: var(--accent-color);
+.section-socials :hover .section-socials :focus {
+  border: var(--accent-color);
 }
 .section-link {
   display: flex;
@@ -359,10 +357,14 @@ border: var(--accent-color);
   align-items: center;
   border: 1px solid #afb1b8;
 }
-.section-link :hover,
-.section-link :focus {
+.section-socials:hover,
+.section-socials:focus {
   fill: var(--accent-color);
-  
+}
+
+.section-link:hover,
+.section-link:focus {
+  color: var(--accent-color);
 }
 .section-socials {
   justify-content: center;
@@ -423,7 +425,7 @@ border: var(--accent-color);
 .button-box:hover {
   background: var(--accent-color);
   border-radius: 4px;
-  color: var(--primary-text-color);
+  color: var(--main-background);
 }
 .button-box {
   display: inline-block;
@@ -444,12 +446,13 @@ border: var(--accent-color);
 .table-link {
   box-sizing: border-box;
 }
-
+.table-link :hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .cards {
   padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .description {
