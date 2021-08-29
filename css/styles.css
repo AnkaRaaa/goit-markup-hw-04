@@ -310,6 +310,12 @@ a {
 }
 .ttt {
   display: flex;
+  width: 44px;
+  height: 44px;
+  background-image: var(--primary-text-color);
+}
+.ttt :hover {
+  fill: rgb(16, 17, 17);
 }
 .team-list :hover,
 :focus {
@@ -353,6 +359,7 @@ a {
 .section-link :hover,
 :focus {
   fill: var(--accent-color);
+  border: var(--accent-color);
 }
 .section-socials {
   justify-content: center;
@@ -372,46 +379,16 @@ a {
   margin-left: 30px;
 }
 
-/* .feature-item::before {
-  content: "";
-  display: block;
-  height: 120px;
-  background-color: #f5f4fa;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; */
-
 .feature-box {
-  content: "";
-  /* display: block; */
+  display: flex;
   height: 120px;
   background-color: #f5f4fa;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  /* padding: 25px 0; */
-  background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
   justify-content: center;
+  align-items: center;
+  /* padding: 25px 0; */
 }
-/* .feature-icon { */
-/* content: "";
-  /* display: block; */
-/* height: 120px;
-  background-color: #f5f4fa;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  /* padding: 25px 0; */
-/* background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  justify-content: center
-  justify-content: center;
-} */
 
 .feature-list-title {
   font-weight: 700;
@@ -515,4 +492,8 @@ a {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-list {
+}
+.footer-link {
 }
