@@ -43,14 +43,20 @@
         </nav>
         <ul class="auth-nav list">
           <li class="list-item">
+            <svg class="auth-nav-thumbnail-gmail" width="16" height="12">
+              <use href="./image/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+            <a href="mailto:info@devstudio.com" class="auth-nav-link"
+              >info@devstudio.com</a>
+            
+          </li>
+          <li class="list-item">
+            <svg class="auth-nav-thumbnail-telefon" width="10" height="16">
+              <use class="auth-nav-thumbnail-telefon" href="./image/symbol-defs.svg#icon-smartphone" ></use>
+            </svg>
             <a href="tel:+380961111111" class="auth-nav-link">
               +38 096 111 11 11
             </a>
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="auth-nav-link"
-              >info@devstudio.com</a
-            >
           </li>
         </ul>
       </div>
@@ -60,13 +66,13 @@
         <div class="container">
           <h1 class="visually-hidden">Быстрый переход на страницу</h1>
           <ul class="button-menu">
-            <li class="button-item"><button type="button" class="button-box">Все</button></li>
-            <li class="button-item"><button type="button" class="button-box">Веб-сайты</button></li>
-            <li class="button-item">
-              <button type="button" class="button-box">Приложения</button>
+            <li class="button-item"><a href=""><button type="button" class="button-box">Все</button></a></li>
+            <li class="button-item"><a href=""><button type="button" class="button-box">Веб-сайты</button></a></li>
+            <li class="button-item"><a href="">
+              <button type="button" class="button-box">Приложения</button></a>
             </li>
-            <li class="button-item"><button type="button" class="button-box">Дизайн</button></li>
-            <li class="button-item"><button type="button" class="button-box">Маркетинг</button></li>
+            <li class="button-item"><a href=""><button type="button" class="button-box">Дизайн</button></a></li>
+            <li class="button-item"><a href=""><button type="button" class="button-box">Маркетинг</button></a></li>
           </ul>
           <ul class="section-table">
          <li class="table-img">
@@ -150,7 +156,8 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
+      <div class="container content">
+      <div class="footer-holder">
       <a href="" class="logofooter"
         ><span class="logoweb">Web</span
         ><span class="logostudioblack">Studio</span></a
@@ -163,8 +170,25 @@
           </li>
           <li><a href="" class="address-link">info@example.com</a></li>
           <li><a href="" class="address-link">+38 099 111 11 11</a></li>
-        </ul>
-        </div>
+        </ul> </div> 
+       <div class="footer-box">
+         <h2 class="footer-title">Присоединяйтесь</h2>
+            <ul class="footer-socials">
+                <li class="footer-list">                   
+                    <a href="https://www.instagram.com/?hl=ru" class="footer-link"> <svg  class="footer-icon" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-instagram" ></use></svg></a></li>
+             <li class="footer-list">                   
+                    <a href="https://twitter.com" class="footer-link"> <svg  class="footer-icon"width="20" height="20" >
+                      <use href="./image/symbol-defs.svg#icon-twitter" ></use></svg></a></li>
+
+            <li class="footer-list">                   
+                    <a href="https://www.facebook.com" class="footer-link"> <svg  class="footer-icon" width="20" height="20">
+                      <use href="./image/symbol-defs.svg#icon-facebook" ></use></svg></a></li>
+                      <li class="footer-list">                   
+                    <a href="https://ru.linkedin.com" class="footer-link"> <svg  class="footer-icon" width="20" height="20" >
+                      <use href="./image/symbol-defs.svg#icon-linkedin"></use></svg></a></li>          
+      </div>
+      </div>
       </address>
     </footer>
   </body>
